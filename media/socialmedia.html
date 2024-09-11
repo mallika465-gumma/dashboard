@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Media Dashboard</title>
+    <link rel="stylesheet" href="socialmedia..css">
+</head>
+<body>
+    <header>
+        <h1>Social Media Dashboard</h1>
+        <nav>
+            <a href="#login" id="nav-login">Login</a>
+            <a href="#feed" id="nav-feed" style="display: none;">Feed</a>
+        </nav>
+    </header>
+
+    <section id="login">
+        <h2>Login</h2>
+        <form id="login-form">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            <button type="submit">Login</button>
+        </form>
+    </section>
+
+    <section id="feed" style="display: none;">
+        <h2>Your Feed</h2>
+        <button id="connect-twitter">Connect Twitter</button>
+        <button id="connect-facebook">Connect Facebook</button>
+        <button id="connect-instagram">Connect Instagram</button>
+        <div id="feed-content"></div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Social Media Dashboard. All rights reserved.</p>
+    </footer>
+
+    <script src="social.js"></script>
+</body>
+</html>
